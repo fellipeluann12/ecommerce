@@ -34,7 +34,7 @@ const Avatar: React.FC<Props> = () => {
   ];
 
   return (
-    <div className="relative border-l-1 border-neutral-300 pl-4" ref={menuRef}>
+    <div className="relative border-l-1 border-neutral-300 pl-2" ref={menuRef}>
       <div
         className="flex-shrink-0 rounded-lg border border-neutral-300 px-1 py-1 hover:cursor-pointer"
         onClick={() => {
