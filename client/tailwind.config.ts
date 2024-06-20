@@ -14,6 +14,14 @@ const config: Config = {
       },
       minWidth: {
         "200px": "200px",
+        "114px": "114px",
+        "54px": "54px",
+      },
+      minHeight: {
+        "3.375rem": "3.375rem",
+      },
+      colors: {
+        primary: "#007dfc",
       },
     },
     fontFamily: {

@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "e-commerce",
@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-neutral-100 font-sans antialiased">
+      <body
+        className={`flex min-h-screen flex-col bg-neutral-100 antialiased ${inter.className}`}
+      >
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
